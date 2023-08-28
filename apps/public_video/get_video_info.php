@@ -21,7 +21,7 @@
         private function send_request($url)
         {
             // If URL is group or person video, change user agent request.
-            $patt = '/^(?:https:\/\/)?(?:www\.|web\.)?(?:facebook\.com|fb\.watch)\/(?:[^\/?]+\/)?(?:videos\/\d+|vb\.\d+|videos\/\d+\/vb\.\d+)\/?(?:\?.*)?$/';
+            $patt = '/^(?:https:\/\/)?(?:fb.watch\/|www\.facebook\.com\/)?(?:[\w\d].*\/)?(?:videos\/)?(?:[\w\d]*\/)?$/';
 
             $user_agent = '';
 
